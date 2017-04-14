@@ -8,7 +8,7 @@ body {
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
-  background-color: black;
+  background-color: white;
 }
 html {
   width: 100%;
@@ -21,9 +21,8 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 p {
@@ -134,9 +133,9 @@ a.show:focus {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: white;
+  color: black;
   background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-  background-color: black;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
