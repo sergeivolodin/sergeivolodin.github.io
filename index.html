@@ -34,7 +34,12 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
+<style>
+.contentbox {
+min-width: 500px;
+}
+</style>
+    <div class="navbar-wrapper contentbox">
       <div class="container">
 
         <nav class="navbar navbar-inverse navbar-static-top">
@@ -66,7 +71,7 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide contentbox" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -78,12 +83,13 @@
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <div class="container">
-            <div class="carousel-caption" style="text-align: center; min-height: 400px; background: url('./img/bg.jpg') no-repeat center center scroll;">
+            <div class="carousel-caption">
+                <p>Hi! I am an MSc computer science student at <a href="http://epfl.ch">EPFL</a> and an <a href="http://mipt.ru/english/">MIPT</a> graduate.</p>
+                <img style="max-width: 400px;" class="img-rounded" src="./img/bg.jpg">
               <div style="">
-                <a href="http://epfl.ch"><img style="max-width: 200px;" class="img-rounded" src="./img/EPFL-Logo.jpg" /></a>
-                <a href="https://mipt.ru/english/"><img style="max-width: 200px;" class="img-rounded" src="./img/MIPT-Logo.jpg" /></a>
+                <a href="http://epfl.ch"><img style="max-width: 150px;" class="img-rounded" src="./img/EPFL-Logo.jpg" /></a>
+                <a href="https://mipt.ru/english/"><img style="max-width: 150px;" class="img-rounded" src="./img/MIPT-Logo.jpg" /></a>
               </div>
-              <p>Hi! I am an MSc computer science student at <a href="http://epfl.ch">EPFL</a> and an <a href="http://mipt.ru/english/">MIPT</a> graduate.</p>
             </div>
           </div>
         </div>
@@ -135,13 +141,13 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-    <div class="container marketing" id="cv" style="min-height: 80px; width: 100%; background: #88ff60;">
+    <div class="container marketing contentbox" id="cv" style="min-height: 80px; width: 100%; background: #88ff60;">
         <div class="row text-center">
             <h1><a href="https://github.com/sergeivolodin/cv/raw/master/VolodinSergeiCV.pdf">Check out my CV</a></h1>
         </div>
     </div>
 
-    <div class="container marketing" id="about"><br />
+    <div class="container marketing contentbox" id="about"><br />
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -174,7 +180,7 @@ Finally, I enjoy snowboarding in winter.</p>
       </div><!-- /.row -->
 
    </div>
-    <div class="container marketing" id="contact" style="min-height: 80px; width: 100%; background: #ffaa60;">
+    <div class="container marketing contentbox" id="contact" style="min-height: 80px; width: 100%; background: #ffaa60;">
         <div class="row text-center">
             <h4>Sergei Volodin</h4>
             <p class="intro-text"><i>CS MSc Student at EPFL</i></p>
@@ -283,7 +289,7 @@ Finally, I enjoy snowboarding in winter.</p>
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017 Volodin Sergei</p>
+        <p>&copy; 2018 Volodin Sergei</p>
       </footer>
 
     </div><!-- /.container -->
