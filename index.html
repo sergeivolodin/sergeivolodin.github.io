@@ -7,7 +7,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
 
     <title>Sergei Volodin</title>
 
@@ -29,14 +28,21 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/carousel.css" rel="stylesheet">
-    <link href="assets/css/timeline.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
 <style>
+.link-orange:link    {color: #ffffff;}
+.link-orange:hover   {color: #ededed;}
+.link-orange:active  {color: #e0e0e0;}
+.link-orange:visited {color: #dbdbdb;}
+.cvjustify {
+ text-align: justify;
+ text-justify: inter-word;
+}
 .contentbox {
-min-width: 500px;
+ min-width: 500px;
 }
 </style>
     <div class="navbar-wrapper contentbox">
@@ -55,10 +61,9 @@ min-width: 500px;
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#cv">Curriculum Vitae</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/sergeivolodin/cv/raw/master/VolodinSergeiCV.pdf" target="_blank"><b><u>Download my CV</u></b></a></li>
+                <li><a href="#about" class="ainternal">My projects</a></li>
+                <li><a href="mailto:sergei.volodin@epfl.ch">sergei.volodin@epfl.ch</a></li>
 <!--                <li><a href="#projects">Projects</a></li>-->
               </ul>
             </div>
@@ -85,7 +90,7 @@ min-width: 500px;
           <div class="container">
             <div class="carousel-caption">
                 <img style="max-width: 400px;" class="img-rounded" src="./img/bg.jpg?1">
-                <p>Hi! I am Master student in Computer Science at the<br /> <a href="http://epfl.ch">Swiss Federal Institute of Technology (EPFL)</a></p>
+                <p>Hi! I am Master student in Computer Science at the<br /> <a class="link-orange" href="http://epfl.ch">Swiss Federal Institute of Technology (EPFL)</a></p>
             </div>
           </div>
         </div>
@@ -139,7 +144,8 @@ min-width: 500px;
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container marketing contentbox" id="cv" style="min-height: 80px; width: 100%; background: #88ff60;">
         <div class="row text-center">
-            <h1>Check out what I do:</h1>
+            <h1><a href="#about" class="ainternal">Check out what I do
+            <img width="50" src="./img/down.png" /></a></h1>
         </div>
     </div>
 
@@ -150,19 +156,19 @@ min-width: 500px;
         <div class="col-lg-4 col-md-4 col-sm-12">
           <h2>Academia</h2>
           <a href="http://epfl.ch"><img src="./img/EPFL-Logo.jpg?1" class="img-rounded" height="140"></a><br /><br />
-          <p>
+          <p class="cvjustify">
 I am currently studying for my Master's degree in <b>Computer Science</b> with a minor in Computational Neurosciences
-at the Swiss Federal Institude of Technology in Lausanne (EPFL), the
-<a href="https://www.topuniversities.com/university-rankings/world-university-rankings/2018"><b>top 12th</b> univesity</a> in the world.
+at the Swiss Federal Institute of Technology in Lausanne (EPFL), the
+<a href="https://www.topuniversities.com/university-rankings/world-university-rankings/2018"><b>top 12th</b> university</a> in the world.
 I am currently working at the <a href="http://dcl.epfl.ch">Distributed Computing Laboratory</a> on <b>Machine Learning</b> problems,
 both on <b>theory and on experimental</b> sections.
 After finishing my Master's degree I would like to pursue an academic career and see a <b>PhD</b> in Computer Science as a next step.
 
 <br />Last year I have created a <a href="https://github.com/chili-epfl/qml-ar">seamless augmented reality library</a> working in the <a href="http://chili.epfl.ch">CHILI lab</a>.
-The goal was to first get rid of conventinoal black-and-white markers which spoil the scene visually, and seconly, make it run on Android tablets with decent latency,
+The goal was to first get rid of conventional black-and-white markers which spoil the scene visually, and secondly, make it run on Android tablets with decent latency,
 both goals were achieved.
 
-<br />In 2017 I have graduated from the <a href="http://mipt.ru/en">Moscow Institude of Physics and Technology</a>,
+<br />In 2017 I have graduated from the <a href="http://mipt.ru/en">Moscow Institute of Physics and Technology</a>,
 the leading technical university in Russia with a Bachelor's degree in <b>Applied Mathematics</b>.
 
 <br />As part of my BSc thesis, I have worked on the <a href="https://arxiv.org/abs/1810.00896"><b>paper on optimization</b></a> and on a
@@ -172,7 +178,7 @@ I participate in software development and scientific competitions and present my
         <div class="col-lg-4 col-md-4 col-sm-12">
           <h2>Industry</h2>
           <a href="http://demo:demo@ec3.pagekite.escapecontrol.ru"><img src="./img/ec.png?1" class="img-rounded" height="140"></a><br /><br />
-          <p>Moreover, I have obtained <b>industrial experience</b> both working for small startups and creating my own.
+          <p class="cvjustify">Moreover, I have obtained <b>industrial experience</b> both working for small startups and creating my own.
 I have worked in the field of High-Frequency Trading in 2015-2016, developing in C++ an application from initial statement to production and supporting and I was <b>responsible</b>
 for the <b>performance of the code</b> which gave me a lot of experience in <b>low-level networking and parallelism</b>.
 I regularly performed benchmarks and tweaked the internals of the algorithm to make it run faster as this was the key property
@@ -180,7 +186,7 @@ which made the team profit.
 
 <br />In addition, in 2015 I have <b>created a startup</b> called <a href="http://escapecontrol.ru">EscapeControl</a> which provides real-life escape rooms
 with a software <a href="http://demo:demo@ec3.pagekite.escapecontrol.ru">framework</a>.
-It allows to set up all of the escape room logic after the hardware is already installed via a simple and intuitive web-interface,
+It allows to set up all of the escape room logic after the hardware is already installed via a simple and intuitive web interface,
 instead of opening up the walls and reflashing microcontrollers,
 thus reducing the construction time by weeks.
 The interface also allows to see the source of the problem quickly which makes the process of repairs much faster, and thus <b>saves money and time</b>.
@@ -191,17 +197,23 @@ My roles in this project are various, starting from managing the team and writin
         <div class="col-lg-4 col-md-4 col-sm-12">
           <h2>Other</h2>
           <a href="https://www.effectivealtruism.org"><img src="./img/ea.png" class="img-rounded" height="140"></a><br /><br />
-          <p>I do believe in kindness and <b>helping people,</b> which is represented in my interest and involvement in
+          <p class="cvjustify">I do believe in kindness and <b>helping people,</b> which is represented in my interest and involvement in
           the <a href="https://www.effectivealtruism.org/"><b>Effective Altruism</b></a>
           community in Lausanne, as well as other movements.
-          <br />Moreover, during past 5 years I have participated in various projects, such as
+          <br />Moreover, during the past years, I have participated in various projects, such as
           an <b>autonomous <a href="https://github.com/it-workshop/Quadrocopter">quadcopter</a></b> which we have built from scratch.
-          I have <b>managed the team</b> and was its <b>lead developer</b> for that project. After just two years of development it did fly,
-          and the results were <b>published in a blog</b> as a <a href="http://web.archive.org/web/20141016114551/http://habrahabr.ru/company/technoworks/blog/216437/"><b>popular science article</b></a> <i>(in Russian)</i>.<br />
+          I have <b>managed the team</b> and was its <b>lead developer</b> for that project. After just two years of development, it did fly,
+          and the results were <b>published in a blog</b> as a <a href="http://web.archive.org/web/20141016114551/http://habrahabr.ru/company/technoworks/blog/216437/">
+              <b>popular science article</b></a> <i>(in Russian)</i>.</p>
+<center>
           <iframe width="250" height="150" src="https://www.youtube.com/embed/AxDoO-gNRtc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br /><i>Moscow, 2014. Team management, lead developer. Created a <a href="https://github.com/it-workshop/Quadrocopter/tree/master/arduino/quadrocopter_oop">stabilizing algorithm</a> from scratch based on PID regulators running on Arduino controller and using IMU sensors.</i>
-          <br />I am interested in <b>philosophy</b> and love thoughful discussions.
-          Finally, I enjoy <b>snowboarding</b> in winter and <b>running</b>.</p>
+</center>
+          <p class="cvjustify"><i>Moscow, 2014. Team management, lead developer. Created a
+          <a href="https://github.com/it-workshop/Quadrocopter/tree/master/arduino/quadrocopter_oop">stabilizing algorithm</a>
+          from scratch based on PID regulators running on Arduino controller and using IMU sensors.</i><br />
+          I am interested in <b>philosophy</b> and love thoughtful discussions.
+          Finally, I enjoy <b>snowboarding</b> in winter and <b>running</b>.
+</p>
         </div><!-- /.col-lg-4 -->
       </div>
       <div class="row">
@@ -216,15 +228,6 @@ My roles in this project are various, starting from managing the team and writin
             <p>+41 78 732 01 34<br /><a class="show" href="mailto:sergei.volodin@epfl.ch">sergei.volodin@epfl.ch</a></p>
         </div>
     </div>
-    <div class="container marketing">
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2018 Volodin Sergei</p>
-      </footer>
-
-    </div><!-- /.container -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -234,6 +237,32 @@ My roles in this project are various, starting from managing the team and writin
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".ainternal").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
   </body>
 </html>
 
