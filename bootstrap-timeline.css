@@ -99,7 +99,11 @@ This awesome ♡♡♡ thing is from https://bootsnipp.com/snippets/OzQj
         }
 
         .timeline > li > .timeline-badge > i {
-            top: 25%;
+            top: 25% !important;
+        }
+
+        .timeline > li > .timeline-badge > i.fa {
+            position: relative;
         }
 
         .timeline > li.timeline-inverted > .timeline-panel {

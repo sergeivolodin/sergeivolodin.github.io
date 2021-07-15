@@ -5,9 +5,16 @@
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/ea1881ee4c.js"></script>
 
   <!-- Timeline CSS (borrowed) -->
   <link rel="stylesheet" href="./bootstrap-timeline.css" />
+
+  <!-- Website main css -->
+  <link rel="stylesheet" href="./website.css" />
+
+  <!-- Carousel -->
+  <link rel="stylesheet" href="./carousel.css" />
 
   <title>
     Sergia's work
@@ -15,34 +22,115 @@
 </head>
 
 <body style="background-color: pink; color: white;">
-  <h1>Sergia's website</h1><hr />
+  <h1>Hi :)</h1><hr />
+
+You can call me Sergia or Sergei.
+
+<img src="me-pink.jpeg" class="main_profile" />
+<img src="me-blue.jpeg" class="main_profile" />
 
 Timeline 2010-2021
 
-
 <div class="container">
+    <div id="myCarousel" class="carousel slide contentbox" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="container">
+            <div class="carousel-caption">
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/B4-2qYsAKH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Our project with CHILI EPFL for helping children learn vector addition in a playful way.<br />
+
+                  Credits:
+
+                  Sergia: software development and design of qml-ar and the learning activity
+
+                  Wafa Johal, Pierre Dillenbourg, Ayberk Ozgur: guidance and the learning activity design
+
+                  Ayberk Ozgur, Wafa Johal: help with Cellulo development setup&custom features
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+                <img style="max-width: 350px;" class="img-rounded" src="Sergei%20Volodin_files/redecision.jpg">
+                <p>I am interested in Artificial Intelligence, Effective Altruism <br>and software engineering.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+                <img style="max-width: 350px;" class="img-rounded" src="Sergei%20Volodin_files/trad_school.jpg">
+                <p>I regularly participate in conferences,</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+                <img style="max-width: 250px;" class="img-rounded" src="Sergei%20Volodin_files/devcup_1.jpg">
+                <p>software development competitions,</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+                <img style="max-width: 350px;" class="img-rounded" src="Sergei%20Volodin_files/board.jpg">
+                <p>and snowboarding!<br><i>Read details below</i></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+
 <div class="container">
   <div class="page-header">
       <h1 id="timeline">Timeline</h1>
   </div>
   <ul class="timeline">
       <li>
-        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+        <div class="timeline-badge success"><i class="fa fa-paint-brush"></i></div>
         <div class="timeline-panel">
           <div class="timeline-heading">
-            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+            <h4 class="timeline-title">Looking for a job to work with ML art</h4>
+            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> July 2021</small></p>
           </div>
           <div class="timeline-body">
-            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+            <p>Interested in GAN art, human-in-the-loop things. Have technical skills. See below.</p>
           </div>
         </div>
       </li>
+
+
+
+
       <li class="timeline-inverted">
-        <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+        <div class="timeline-badge info"><i class="glyphicon glyphicon-credit-card"></i></div>
         <div class="timeline-panel">
           <div class="timeline-heading">
-            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+            <h4 class="timeline-title">Co-founder and ex-ML/Backend developer of Tournesol.app</h4>
+            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> May 2020 -- May 2021</small></p>
           </div>
           <div class="timeline-body">
             <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
@@ -54,17 +142,17 @@ Timeline 2010-2021
         <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
         <div class="timeline-panel">
           <div class="timeline-heading">
-            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+            <h4 class="timeline-title">Graduated from EPFL with Master's in Computer Science & Computational Neurosciences</h4>
           </div>
           <div class="timeline-body">
-            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+            <p>Thesis: CauseOccam, started as a Google Internship</p>
           </div>
         </div>
       </li>
       <li class="timeline-inverted">
         <div class="timeline-panel">
           <div class="timeline-heading">
-            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+            <h4 class="timeline-title">Internship at CHAI Berkeley</h4>
           </div>
           <div class="timeline-body">
             <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
@@ -75,10 +163,10 @@ Timeline 2010-2021
         <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
         <div class="timeline-panel">
           <div class="timeline-heading">
-            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+            <h4 class="timeline-title">Augmented reality for teaching vectors</h4>
           </div>
           <div class="timeline-body">
-            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+            <p>Research Assistant project at EPFL</p>
             <hr>
             <div class="btn-group">
               <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
@@ -132,7 +220,11 @@ Acknowledgements&thanks
 
 Let's discuss things
 
+I am on Twitter: @sergeivolodinch
+
 Write me!
+
+sergia94@protonmail.com
 
 </body>
 
