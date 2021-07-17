@@ -16,12 +16,16 @@
   <!-- Carousel -->
   <link rel="stylesheet" href="./carousel.css" />
 
+  <!-- Credits popover -->
+  <link rel="stylesheet" href="./credits-popover.css" />
+
   <title>
     Sergia's work
   </title>
-</head>
+</head> 
 
-<body style="background-color: pink; color: white;">
+
+<body style="background-color: rgb(255, 255, 255); color: rgb(104, 0, 105);">
   <h1>Hi :)</h1><hr />
 
 You can call me Sergia or Sergei.
@@ -30,6 +34,7 @@ You can call me Sergia or Sergei.
 <img src="me-blue.jpeg" class="main_profile" />
 
 Timeline 2010-2021
+
 
 <div class="container">
     <div id="myCarousel" class="carousel slide contentbox" data-ride="carousel">
@@ -44,19 +49,38 @@ Timeline 2010-2021
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <div class="container">
-            <div class="carousel-caption">
+
+            <center>
+              <button type="button"
+              class="btn btn-primary btn-info"
+              href="#"
+              id="vectors-popover-button"
+              title="CREDITS" data-toggle="popover"
+              data-placement="bottom" html="true">CREDITS</button>
+
+            </center>
+
               <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/B4-2qYsAKH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Our project with CHILI EPFL for helping children learn vector addition in a playful way.<br />
 
-                  Credits:
-
-                  Sergia: software development and design of qml-ar and the learning activity
-
-                  Wafa Johal, Pierre Dillenbourg, Ayberk Ozgur: guidance and the learning activity design
-
-                  Ayberk Ozgur, Wafa Johal: help with Cellulo development setup&custom features
-                </p>
-            </div>
+                  
+                
+                <div id="vectors-popover-content" style="display: none;">
+                
+                  <b>SERGIA</b><br />
+                  <i>software development and design of qml-ar and the learning activity</i>
+                  <br /><br />
+                  
+                  <b>WAFA JOHAL, PIERRE DILLENBOURG, AYBERK OZGUR</b><br />
+                  <i>guidance and the learning activity design</i>
+                  <br /><br />
+                
+                  <b>AYBERK OZGUR, WAFA JOHAL</b><br />
+                  <i>help with Cellulo development setup&custom features</i>
+                  
+                
+                </div>
+                                </p>
           </div>
         </div>
         <div class="item">
@@ -186,10 +210,10 @@ Timeline 2010-2021
       <li>
         <div class="timeline-panel">
           <div class="timeline-heading">
-            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+            <h4 class="timeline-title">Older</h4>
           </div>
           <div class="timeline-body">
-            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+            <p>Old website link</p>
           </div>
         </div>
       </li>
@@ -227,5 +251,19 @@ Write me!
 sergia94@protonmail.com
 
 </body>
+
+<script>
+  $(document).ready(function(){
+      // $('[data-toggle="popover"]').popover();   
+
+      $('#vectors-popover-button').popover({
+        html : true, 
+        content: function() {
+            return $('#vectors-popover-content').html();
+        } 
+    });  
+
+  });
+</script>
 
 </html>
