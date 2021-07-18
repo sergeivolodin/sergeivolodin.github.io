@@ -3,6 +3,8 @@
 
 .carousel {
   height: 450px;
+  border: 5px solid #969696;
+  border-radius: 15px;
 }
 
 .carousel-caption {

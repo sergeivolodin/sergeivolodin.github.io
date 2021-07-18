@@ -1,6 +1,7 @@
 <html>
 <head>
 
+
   <!-- Bootstrap 3.0.3 -->
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -10,13 +11,16 @@
   <!-- Timeline CSS (borrowed) -->
   <link rel="stylesheet" href="./bootstrap-timeline.css" />
 
-  <!-- Website main css -->
+  <!-- Profile picture CSS -->
+  <link rel="stylesheet" href="./profile-picture.css" />
+
+  <!-- Website main CSS -->
   <link rel="stylesheet" href="./website.css" />
 
-  <!-- Carousel -->
+  <!-- Carousel CSS -->
   <link rel="stylesheet" href="./carousel.css" />
 
-  <!-- Credits popover -->
+  <!-- Credits popover CSS -->
   <link rel="stylesheet" href="./credits-popover.css" />
 
   <title>
@@ -26,15 +30,21 @@
 
 
 <body style="background-color: rgb(255, 255, 255); color: rgb(104, 0, 105);">
-  <h1>Hi :)</h1><hr />
+  <h1 class="top_line_h1">Hi :)
+  You can call me Sergia or Sergei.
+<div class="me_profile_picture">
+<img src="me-blue.jpeg" class="profile_main main_profile" />
+<img src="me-pink.jpeg" class="profile_hover main_profile" />
+</div>
+</h1>
 
-You can call me Sergia or Sergei.
+<hr />
 
-<img src="me-pink.jpeg" class="main_profile" />
-<img src="me-blue.jpeg" class="main_profile" />
+<div class="videos_carousel_outer">
 
-Timeline 2010-2021
+<h2>I do this:</h2>
 
+<br />
 
 <div class="container">
     <div id="myCarousel" class="carousel slide contentbox" data-ride="carousel">
@@ -50,6 +60,8 @@ Timeline 2010-2021
         <div class="item active">
           <div class="container">
 
+            <br />
+
             <center>
               <button type="button"
               class="btn btn-primary btn-info"
@@ -58,7 +70,7 @@ Timeline 2010-2021
               title="CREDITS" data-toggle="popover"
               data-placement="bottom" html="true">CREDITS</button>
 
-            </center>
+              <br />
 
               <iframe
                 width="560"
@@ -89,6 +101,8 @@ Timeline 2010-2021
                 
                 </div>
                                 </p>
+
+            </center>
           </div>
         </div>
 
@@ -135,6 +149,8 @@ Timeline 2010-2021
         <span class="sr-only">Next</span>
       </a>
     </div>
+</div>
+
 </div>
 
 <div class="container">

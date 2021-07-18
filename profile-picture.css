@@ -1,0 +1,26 @@
+/* Profile image */
+
+/* Hover code from https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php */
+
+.me_profile_picture {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+}
+.me_profile_picture .profile_hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.me_profile_picture:hover .profile_hover {
+    display: inline;
+}
+
+img.main_profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

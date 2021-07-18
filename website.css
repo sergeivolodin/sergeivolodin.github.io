@@ -1,5 +1,7 @@
-img.main_profile {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+h1.top_line_h1 {
+  text-align: center;
+}
+
+.videos_carousel_outer {
+    text-align: center;
 }
