@@ -1,4 +1,4 @@
-/* Taken from my previos website, and there it's from a tutorial. */
+/* Taken from my previous website, and there it's from a tutorial. */
 
 
 .carousel {
@@ -24,11 +24,23 @@
 }
 
 .carousel-control.right {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(37, 245, 234, 0.5) 100%)
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(37, 245, 234, 0.5) 100%);
+  color: #49d8c5;
 }
 
 .carousel-control.left {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0px, rgba(37, 245, 234, 0.5) 100%)
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0px, rgba(37, 245, 234, 0.5) 100%);
+  color: #49d8c5;
+}
+
+.carousel-indicators > li {
+  background-color: white;
+  border: 1px solid #49d8c5;
+}
+
+.carousel-indicators .active {
+  border: 1px solid white;
+  background-color: #49d8c5;
 }
 
 /* RESPONSIVE CSS

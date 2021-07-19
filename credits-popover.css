@@ -22,15 +22,15 @@
     border-right-color: red !important;
   }  */
 
-  .vectors-popover-content {
-    width: 500px;
-  }
-
   .popover {
     width: 500px;
     min-width: 504px;
   }
 
-  .carousel-popover-content {
+  .carousel-popover-credits-content {
+    display: none;
+  }
+
+  .carousel-popover-details-content {
     display: none;
   }

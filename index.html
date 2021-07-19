@@ -24,6 +24,9 @@
   <!-- Credits popover CSS -->
   <link rel="stylesheet" href="./credits-popover.css" />
 
+  <!-- Details popover CSS -->
+  <link rel="stylesheet" href="./details-popover.css" />
+
   <title>
     Sergia's work
   </title>
@@ -48,12 +51,12 @@
     <br />
 
     <div class="container">
-      <div id="myCarousel" class="carousel slide contentbox" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide contentbox" data-ride="carousel" data-interval="10000">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <!-- <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <!-- <li data-target="#myCarousel" data-slide-to="2" class=""></li>
         <li data-target="#myCarousel" data-slide-to="3" class=""></li>
         <li data-target="#myCarousel" data-slide-to="4" class=""></li> -->
         </ol>
@@ -78,16 +81,19 @@
 
                 <!-- Credits button -->
 
-                2017-2021 <button type="button" class="btn btn-primary btn-info" href="#" id="vectors-popover-button"
+                2017-2021 <button type="button" class="btn btn-primary btn-success" href="#" id="vectors-popover-credits-button"
                   title="CREDITS" data-toggle="popover" data-placement="top" html="true">
-                  CREDITS
-                </button>
+                  Credits
+                </button> <button type="button" class="btn btn-primary btn-info" href="#" id="vectors-popover-details-button"
+                title="Details" data-toggle="popover" data-placement="top" html="true">
+                Details
+              </button>
 
               </p>
 
               <!-- Credits content -->
 
-              <div class="carousel-popover-content" id="vectors-popover-content">
+              <div class="carousel-popover-credits-content" id="vectors-popover-credits-content">
 
                 <b>SERGEI</b><br />
                 <i>software development and architecture of
@@ -114,50 +120,88 @@
 
               </div>
 
+              <!-- Details content -->
+
+              <div class="carousel-popover-details-content" id="vectors-popover-details-content">
+                <i class="fa fa-github icon-carousel-details" aria-hidden="true"></i><br />
+                <a href="https://github.com/chili-epfl/qml-ar">qml-ar library</a>:
+                existing <a href="http://limu.ait.kyushu-u.ac.jp/~uchiyama/me/code/UCHIYAMARKERS/index.html">random dot markers</a>
+                made into a Qt (C++ and QML) library for Linux and Android.
+                GPU shaders and heuristics (IMU usage, multithreading, caching)
+                allow for 30FPS on Android compared to ~10FPS with the original code.
+                <br /><br />
+
+
+                <i class="fa fa-youtube-play icon-carousel-details" aria-hidden="true"></i><br />
+                <a href="https://www.youtube.com/watch?v=rmaAGNuKy3c">Presentation</a> of the qml-ar library
+                at the <a href="https://qtday.it/en/">QtDay 2019</a> in Firenze, Italy
+              </div>
+
             </div>
           </div>
 
-          <!-- <div class="item">
-          <div class="container">
-            <div class="carousel-caption">
-                <img style="max-width: 350px;" class="img-rounded" src="Sergei%20Volodin_files/redecision.jpg">
-                <p>I am interested in Artificial Intelligence, Effective Altruism <br>and software engineering.</p>
+          <!-- Causality project -->
+
+          <div class="item">
+            <div class="container">
+
+              <!-- Youtube video -->
+
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4cO4XU15isQ"
+                id="vid1"
+                title="Causality MLSS 2020" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+
+              <!-- Description -->
+
+              <p>Master's Thesis and a Google internship: simple world models lead to good abstractions<br />
+
+                <!-- Credits button -->
+
+                2019-2021 <button type="button" class="btn btn-primary btn-success" href="#" id="causality-popover-credits-button"
+                  title="CREDITS" data-toggle="popover" data-placement="top" html="true">
+                  Credits
+                </button> <button type="button" class="btn btn-primary btn-info" href="#" id="causality-popover-credits-button"
+                  title="DETAILS" data-toggle="popover" data-placement="top" html="true">
+                  Details
+                </button>
+
+              </p>
+
+              <!-- Credits content -->
+
+              <div class="carousel-popover-credits-content" id="causality-popover-credits-content">
+
+                <b>SERGEI</b><br />
+                brainstorming, coding, paper writing
+                <br /><br />
+
+                <b>JOHANNI BREA, WULFRAM GERSTNER</b><br />
+                advising on the thesis, brainstorming, paper writing
+                <br /><br />
+
+                <b>NEVAN WICHERS, JEREMY NIXON, IVAN VENDROV</b><br />
+                advising on the internship, brainstorming, paper writing
+                <br /><br />
+
+                <b>Google Research (2019-2020), LCN EPFL (2020-2021)</b><br />
+                funding, infrastructure, dried mangos
+
+              </div>
+
             </div>
           </div>
-        </div>
-        <div class="item">
-          <div class="container">
-            <div class="carousel-caption">
-                <img style="max-width: 350px;" class="img-rounded" src="Sergei%20Volodin_files/trad_school.jpg">
-                <p>I regularly participate in conferences,</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="container">
-            <div class="carousel-caption">
-                <img style="max-width: 250px;" class="img-rounded" src="Sergei%20Volodin_files/devcup_1.jpg">
-                <p>software development competitions,</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="container">
-            <div class="carousel-caption">
-                <img style="max-width: 350px;" class="img-rounded" src="Sergei%20Volodin_files/board.jpg">
-                <p>and snowboarding!<br><i>Read details below</i></p>
-            </div>
-          </div>
-        </div> -->
 
         </div>
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">Previous</span>
+          <!-- <span class="carousel-control-text">Previous</span> -->
         </a>
         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">Next</span>
+          <!-- <span class="carousel-control-text">Next</span> -->
         </a>
       </div>
     </div>
@@ -310,10 +354,31 @@
   $(document).ready(function () {
     // $('[data-toggle="popover"]').popover();   
 
-    $('#vectors-popover-button').popover({
+    $('#vectors-popover-credits-button').popover({
       html: true,
       content: function () {
-        return $('#vectors-popover-content').html();
+        return $('#vectors-popover-credits-content').html();
+      }
+    });
+
+    $('#vectors-popover-details-button').popover({
+      html: true,
+      content: function () {
+        return $('#vectors-popover-details-content').html();
+      }
+    });
+
+    $('#causality-popover-credits-button').popover({
+      html: true,
+      content: function () {
+        return $('#causality-popover-credits-content').html();
+      }
+    });
+
+    $('#causality-popover-details-button').popover({
+      html: true,
+      content: function () {
+        return $('#causality-popover-details-content').html();
       }
     });
 
