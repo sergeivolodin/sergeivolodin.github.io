@@ -82,12 +82,15 @@
                 <!-- Credits button -->
 
                 2017-2021 <button type="button" class="btn btn-primary btn-success" href="#" id="vectors-popover-credits-button"
-                  title="CREDITS" data-toggle="popover" data-placement="top" html="true">
+                  title="Credits" data-toggle="popover" data-placement="top" html="true">
                   Credits
                 </button> <button type="button" class="btn btn-primary btn-info" href="#" id="vectors-popover-details-button"
                 title="Details" data-toggle="popover" data-placement="top" html="true">
-                Details
-              </button>
+                  Details
+                </button> <button type="button" class="btn btn-primary btn-warning" href="#" id="vectors-popover-pictures-button"
+                title="Pictures" data-toggle="popover" data-placement="top" html="true">
+                  Pictures
+                </button>
 
               </p>
 
@@ -98,7 +101,7 @@
                 <b>SERGEI</b><br />
                 <i>software development and architecture of
                   <a href="https://github.com/chili-epfl/qml-ar">qml-ar</a>
-                  and of the learning activity</i>
+                  & the learning activity</i>
                 <br /><br />
 
                 <b>
@@ -123,18 +126,63 @@
               <!-- Details content -->
 
               <div class="carousel-popover-details-content" id="vectors-popover-details-content">
-                <i class="fa fa-github icon-carousel-details" aria-hidden="true"></i><br />
+                <i class="fa fa-github icon-carousel-details" aria-hidden="true"></i>
                 <a href="https://github.com/chili-epfl/qml-ar">qml-ar library</a>:
-                existing <a href="http://limu.ait.kyushu-u.ac.jp/~uchiyama/me/code/UCHIYAMARKERS/index.html">random dot markers</a>
+                existing random dot augmented reality markers by Hideaki Uchiyama
                 made into a Qt (C++ and QML) library for Linux and Android.
                 GPU shaders and heuristics (IMU usage, multithreading, caching)
-                allow for 30FPS on Android compared to ~10FPS with the original code.
+                allow for 30FPS on Android compared to ~10FPS with the original code running on Linux only.
                 <br /><br />
 
 
-                <i class="fa fa-youtube-play icon-carousel-details" aria-hidden="true"></i><br />
+
+                <i class="fa fa-youtube-play icon-carousel-details" aria-hidden="true"></i>
                 <a href="https://www.youtube.com/watch?v=rmaAGNuKy3c">Presentation</a> of the qml-ar library
                 at the <a href="https://qtday.it/en/">QtDay 2019</a> in Firenze, Italy
+                <br /><br />
+
+                <i class="fa fa-book icon-carousel-details"></i>
+                Whitepaper is a work in progress with data from a test run at the
+                <a href="https://www.ecolint.ch/">International School of Geneva</a>. Stay tuned!
+              </div>
+
+              <!-- Pictures content -->
+
+              <div class="carousel-popover-pictures-content" id="vectors-popover-pictures-content">
+                <table border="0">
+                <tr>
+                <td>
+                  <a href="./qml-ar-demos/android4.jpg" target="_blank">
+                    <img src="./qml-ar-demos/android4.jpg" height="100px" />
+                  </a>
+                </td>
+                <td>
+                  <a href="./qml-ar-demos/components_v4.png" target="_blank">
+                    <img src="./qml-ar-demos/components_v4.png" height="100px" />
+                  </a>
+                </td>
+                <td>
+                  <a href="./qml-ar-demos/experiment_ecolint_anno.jpg" target="_blank">
+                    <img src="./qml-ar-demos/experiment_ecolint_anno.jpg" height="100px" />
+                  </a>
+                </td>
+                </tr>
+
+                <tr>
+                <td><i>The red dots on paper are recognized by the
+                  <a href="https://github.com/chili-epfl/qml-ar">qml-ar</a> software
+                  (in blue) to know where the phone is. The chest is an augmented reality object.</i></td>
+
+                <td><i>Architecture of
+                  the <a href="https://github.com/chili-epfl/qml-ar">qml-ar</a> library showing the data flow.
+                  Each component is a C++ class, a QML file, or a physical device.</i></td>
+
+                  <td><i>Test run of the learning activity at the
+                    <a href="https://www.ecolint.ch/">International School of Geneva</a> in 2019.</i></td>
+                </tr>
+                
+
+                </table>
               </div>
 
             </div>
@@ -365,6 +413,13 @@
       html: true,
       content: function () {
         return $('#vectors-popover-details-content').html();
+      }
+    });
+
+    $('#vectors-popover-pictures-button').popover({
+      html: true,
+      content: function () {
+        return $('#vectors-popover-pictures-content').html();
       }
     });
 

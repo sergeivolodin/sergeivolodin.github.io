@@ -6,12 +6,12 @@
     color: #FFFFFF;
     font-size: 28px;
     text-align:center;
-    width: 500px;
+    width: px;
   }
   
   /* Popover Body */
   .popover-content {
-    width: 500px;
+    width: 750px;
     background-color: coral;
     color: #FFFFFF;
     padding: 25px;
@@ -23,8 +23,8 @@
   }  */
 
   .popover {
-    width: 500px;
-    min-width: 504px;
+    width: 750px;
+    min-width: 754px;
   }
 
   .carousel-popover-credits-content {
@@ -32,5 +32,9 @@
   }
 
   .carousel-popover-details-content {
+    display: none;
+  }
+
+  .carousel-popover-pictures-content {
     display: none;
   }
