@@ -1,9 +1,4 @@
 /* From https://www.w3schools.com/bootstrap/bootstrap_ref_js_popover.asp */
-
- /* Popover */
- .popover {
-    border: 2px dotted red;
-  }
   
   /* Popover Header */
   .popover-title {
@@ -11,16 +6,27 @@
     color: #FFFFFF;
     font-size: 28px;
     text-align:center;
+    width: 500px;
   }
   
   /* Popover Body */
   .popover-content {
+    width: 500px;
     background-color: coral;
     color: #FFFFFF;
     padding: 25px;
   }
   
-  /* Popover Arrow */
+  /* Popover Arrow
   .arrow {
     border-right-color: red !important;
-  } 
+  }  */
+
+  .vectors-popover-content {
+    width: 500px;
+  }
+
+  .popover {
+    width: 500px;
+    min-width: 504px;
+  }
