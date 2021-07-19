@@ -134,8 +134,6 @@
                 allow for 30FPS on Android compared to ~10FPS with the original code running on Linux only.
                 <br /><br />
 
-
-
                 <i class="fa fa-youtube-play icon-carousel-details" aria-hidden="true"></i>
                 <a href="https://www.youtube.com/watch?v=rmaAGNuKy3c">Presentation</a> of the qml-ar library
                 at the <a href="https://qtday.it/en/">QtDay 2019</a> in Firenze, Italy
@@ -204,16 +202,21 @@
 
               <!-- Description -->
 
+              <br /><br /><br /><br />
+
               <p>Master's Thesis and a Google internship: simple world models lead to good abstractions<br />
 
                 <!-- Credits button -->
 
                 2019-2021 <button type="button" class="btn btn-primary btn-success" href="#" id="causality-popover-credits-button"
-                  title="CREDITS" data-toggle="popover" data-placement="top" html="true">
+                  title="Credits" data-toggle="popover" data-placement="top" html="true">
                   Credits
-                </button> <button type="button" class="btn btn-primary btn-info" href="#" id="causality-popover-credits-button"
-                  title="DETAILS" data-toggle="popover" data-placement="top" html="true">
+                </button> <button type="button" class="btn btn-primary btn-info" href="#" id="causality-popover-details-button"
+                  title="Details" data-toggle="popover" data-placement="top" html="true">
                   Details
+                </button> <button type="button" class="btn btn-primary btn-warning" href="#" id="causality-popover-pictures-button"
+                  title="Pictures" data-toggle="popover" data-placement="top" html="true">
+                  Pictures
                 </button>
 
               </p>
@@ -248,9 +251,47 @@
 
               <div class="carousel-popover-details-content" id="causality-popover-details-content">
                 <i class="fa fa-book icon-carousel-details"></i>
-                Sergei's Master's Thesis at EPFL, 2020-2021
-                &laquo;CauseOccam: Learning Interpretable Abstract Representations
-                in Reinforcement Learning Environments via Model Sparsity&raquo;
+                My Master's Thesis at EPFL, 2020-2021
+                &laquo;<a
+                href="./causality-simplicity/CauseOccam_Learning_Interpretable_Abstract_Representations_in_Reinforcement_Learning_Environments_via_Model_Sparsity.pdf"
+                target="_blank">
+                CauseOccam: Learning Interpretable Abstract Representations
+                in Reinforcement Learning Environments via Model Sparsity
+                </a>&raquo;. Here we show that simple (in terms of number of edges) neural network-based
+                causal models result in interpretable abstract representations.
+                <br />
+                
+                <i class="fa fa-github icon-carousel-details" aria-hidden="true"></i>
+                <a href="https://github.com/sergia-ch/causality-disentanglement-rl">Project's code</a>:
+                implements learning a sparse causal model of an RL environment from pixels in PyTorch.
+                <br /><br />
+
+                <i class="fa fa-book icon-carousel-details"></i>
+                Our paper from the Google Research internship 
+                &laquo;<a href="https://arxiv.org/pdf/2002.05217.pdf">Resolving Spurious Correlations in Causal Models
+                  of Environments via Interventions</a>&raquo;. Here we define spurious correlations
+                  in RL environments and propose ways to deal with them.
+                  Paper was <a href="https://causalrlworkshop.github.io/program/cldm_8.html">presented</a>
+                  at the
+                  <img src="icons/iclr.png" style="height: 1em" />
+                  ICLR CLDM 2020 workshop,
+
+                <br /><br />
+
+                <i class="fa fa-book icon-carousel-details"></i>
+                <i class="fa fa-youtube-play icon-carousel-details" aria-hidden="true"></i>
+                An
+                <a href="causality-simplicity/Semester_project_Learning_Abstract_Representations_in_Reinforcement_Learning_via_Model_Sparsity.pdf" target="_blank">
+                 intermediate version of the project
+                </a>
+                with linear environments was
+                <a href="https://youtu.be/4cO4XU15isQ" target="_blank">
+                  presented
+                </a>
+                at the
+                <a href="http://mlss.tuebingen.mpg.de/2020/">
+                  Machine Learning Summer School 2020
+                </a>.
 
               </div>
 
@@ -449,6 +490,13 @@
       html: true,
       content: function () {
         return $('#causality-popover-details-content').html();
+      }
+    });
+
+    $('#causality-popover-pictures-button').popover({
+      html: true,
+      content: function () {
+        return $('#causality-popover-pictures-content').html();
       }
     });
 
