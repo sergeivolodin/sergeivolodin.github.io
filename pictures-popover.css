@@ -1,0 +1,9 @@
+.carousel-pictures-table-2x2 tr td {
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-pictures-table-2x2 tr td i {
+    margin-left: 10px;
+    margin-right: 10px
+}
