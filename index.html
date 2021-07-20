@@ -58,8 +58,8 @@
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-        <!-- <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        <!-- <li data-target="#myCarousel" data-slide-to="3" class=""></li>
         <li data-target="#myCarousel" data-slide-to="4" class=""></li> -->
         </ol>
         <div class="carousel-inner" role="listbox">
@@ -350,6 +350,49 @@
 
           <div class="item">
             <div class="container">
+              <!-- Youtube video -->
+              
+              <div class="embed-responsive embed-responsive-16by9">
+                <video width="560" height="315" controls="controls" preload="none" poster="./qcopter/qcopter-preview.png">
+                    <source src="http://escape-control.com/personal/qcopter.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <!-- Description -->
+
+              <p>DIY Quadcopter controller with an IMU and PIDs on Arduino Due<br />
+
+                <!-- Credits button -->
+
+                2011-2014 <button type="button" class="btn btn-primary btn-success" href="#" id="qcopter-popover-credits-button"
+                  title="Credits" data-toggle="popover" data-placement="top" html="true">
+                  Credits
+                </button> <button type="button" class="btn btn-primary btn-info" href="#" id="qcopter-popover-details-button"
+                title="Details" data-toggle="popover" data-placement="top" html="true">
+                  Details
+                </button> <button type="button" class="btn btn-primary btn-warning" href="#" id="qcopter-popover-pictures-button"
+                title="Pictures" data-toggle="popover" data-placement="top" html="true">
+                  Pictures
+                </button>
+
+              </p>
+
+              <!-- Credits content -->
+
+              <div class="carousel-popover-credits-content" id="qcopter-popover-credits-content">
+              </div>
+
+              <!-- Details content -->
+
+              <div class="carousel-popover-details-content" id="qcopter-popover-details-content">
+              </div>
+
+              <!-- Pictures content -->
+
+              <div class="carousel-popover-pictures-content" id="qcopter-popover-pictures-content">
+              </div>
+
+
               To debug it we used our own AVR oscilloscope. Fifty shades and Ladytron.
             </div>
           </div>
