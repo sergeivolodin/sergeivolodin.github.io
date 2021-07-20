@@ -354,7 +354,7 @@
               
               <div class="embed-responsive embed-responsive-16by9">
                 <video width="560" height="315" controls="controls" preload="none" poster="./qcopter/qcopter-preview.png">
-                    <source src="http://escape-control.com/personal/qcopter.mp4" type="video/mp4">
+                    <source src="http://escape-control.com/personal/qcopter-en-2013.mp4" type="video/mp4">
                 </video>
               </div>
 
@@ -380,6 +380,37 @@
               <!-- Credits content -->
 
               <div class="carousel-popover-credits-content" id="qcopter-popover-credits-content">
+                <b>SERGEI</b>:
+                <i>coding, debugging, brainstorming, hardware</i>
+                <br />
+
+                <b><a href="https://ch.linkedin.com/in/arshavir" target="_blank">ARSHAVIR TER-GABRIELYAN</a></b>:
+                <i>mentorship, piloting, brainstorming, code review, hardware, funding</i>
+                <br />
+
+                <b><a href="https://old.sk.ru/news/b/press/archive/2017/05/17/kak-skolteh-i-mit-razrabatyvayut-konkurenta-mnogorukogo-robota-apple.aspx" target="_blank">DMITRY MIRONOV</a></b>:
+                <i>brainstorming, coding, hardware</i>
+                <br />
+
+                <b><a href="https://github.com/linduine" target="_blank">NINA SELEZNEVA</a></b>:
+                <i>brainstorming, hardware</i>
+                <br />
+
+                <b><a href="https://thinkglobalschool.org/testimonial/mark-surnin/" target="_blank">MARK SURNIN</a>,
+                  <a href="https://de-de.facebook.com/gosha.krikun" target="_blank">GOSHA KRIKUN</a>,
+                  <a href="https://vk.com/g.vino" target="_blank">GEORGY VINOGRADOV</a>,
+                  <a href="https://ru.linkedin.com/in/ivan-solomatin-8aa26a152" target="_blank">IVAN SOLOMATIN</a>
+                  & many others</b>:
+                <i>brainstorming, piloting, hardware, coding</i>
+                <br />
+
+                <b><a href="http://wikimipt.org/wiki/%D0%9F%D0%BE%D0%B4%D0%BB%D0%B5%D1%81%D0%BD%D1%8B%D1%85_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%90%D1%80%D1%82%D1%83%D1%80%D0%BE%D0%B2%D0%B8%D1%87">DMITRY PODLESNYKH</a>,
+                  &laquo;<a href="https://www.letnyayashkola.org/" target="_blank">LETNYAYA SHKOLA</a>&raquo;
+                  summer school, <a href="https://goo.gl/maps/7tqJLt2xEDnLpPay5" target="_blank">FINE VILLAGE OF RUCHKI</a>,
+                  <a href="https://en.wikipedia.org/wiki/Joint_Institute_for_Nuclear_Research" target="_blank">JINR</a>
+                </b>:
+                <i>a place to work at during the semester and during the summer</i>
+
               </div>
 
               <!-- Details content -->
@@ -639,6 +670,27 @@
       html: true,
       content: function () {
         return $('#causality-popover-pictures-content').html();
+      }
+    });
+
+    $('#qcopter-popover-credits-button').popover({
+      html: true,
+      content: function () {
+        return $('#qcopter-popover-credits-content').html();
+      }
+    });
+
+    $('#qcopter-popover-details-button').popover({
+      html: true,
+      content: function () {
+        return $('#qcopter-popover-details-content').html();
+      }
+    });
+
+    $('#qcopter-popover-pictures-button').popover({
+      html: true,
+      content: function () {
+        return $('#qcopter-popover-pictures-content').html();
       }
     });
 
