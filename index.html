@@ -621,9 +621,6 @@
                 </script>
 
               </div>
-
-
-              To debug it we used our own AVR oscilloscope. Fifty shades and Ladytron.
             </div>
           </div>
 
@@ -631,6 +628,85 @@
 
           <div class="item">
             <div class="container">
+              <!-- Youtube video -->
+
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xSqqXN0D4fY"
+                title="Tournesol tutorial" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+
+              <!-- Description -->
+
+              <p>Tournesol: byzantine-resilient contributor-driven open-source open-data non-commercial recommender engine<br />
+                (TLDR: contributors compare pairs of videos and the website aggregates the ratings)
+
+                <br />
+
+                <!-- Credits button -->
+
+                2020-2021 <button type="button" class="btn btn-primary btn-success" href="#" id="tournesol-popover-credits-button"
+                  title="Credits" data-toggle="popover" data-placement="top" html="true">
+                  Credits
+                </button> <button type="button" class="btn btn-primary btn-info" href="#" id="tournesol-popover-details-button"
+                title="Details" data-toggle="popover" data-placement="top" html="true">
+                  Details
+                </button> <button type="button" class="btn btn-primary btn-warning" href="#" id="tournesol-popover-pictures-button"
+                title="Pictures" data-toggle="popover" data-placement="top" html="true">
+                  Pictures
+                </button>
+
+              </p>
+
+              <!-- Credits content -->
+
+              <div class="carousel-popover-credits-content" id="tournesol-popover-credits-content">
+                Initially, we were three co-founders:<br /><br />
+
+                <b><a href="https://www.science4all.org/" target="_blank">LÊ NGUYÊN HOANG</a></b><br />
+                <i>algorithm design, open discussions, public outreach, president of the Tournesol association 🇨🇭</i>
+                <br /><br />
+
+                <b>SERGIA</b><br />
+                <i>development (machine learning, backend, frontend), open discussions, algorithm design, ranting on Discord</i>
+                <br /><br />
+
+                <b><a href="https://github.com/lfaucon/" target="_blank">LOUIS FAUCON</a></b><br />
+                <i>development (frontend, backend), open discussions</i>
+                <br /><br />
+
+                At the current stage I am not actively involved, and the project is with EPFL.
+              </div>
+
+              <!-- Details content -->
+
+              <div class="carousel-popover-credits-content" id="tournesol-popover-details-content">
+                <i class="fa fa-youtube-play icon-carousel-details" aria-hidden="true"></i>
+                <a href="https://www.youtube.com/watch?v=Dyx_sR3ZftA" target="_blank">Talk by L&ecirc;</a> on the project,
+                <a href="https://www.youtube.com/watch?v=fe9u6YQTsWY" target="_blank">Talk by L&ecirc;</a> on the importance of AI Ethics
+                <br /><br />
+
+                <i class="fa fa-book icon-carousel-details"></i>
+                <a href="https://arxiv.org/pdf/2107.07334.pdf" target="_blank">Our whitepaper</a>
+                <br /><br />
+
+                <i class="fa fa-github icon-carousel-details" aria-hidden="true"></i>
+                <a href="https://github.com/tournesol-app/tournesol" target="_blank">Project's code</a>
+                <br /><br />
+                
+                <a href="./tournesol/ethics-geneva-ea.zip" target="_blank">My thoughts</a>
+                on the <a href="https://www.theguardian.com/technology/2020/dec/04/timnit-gebru-google-ai-fired-diversity-ethics" target="_blank">Google Ethics team</a> events
+                on the <a href="https://eageneva.org/" target="_blank">Effective Altruism Geneva</a> forum
+                <br /><br />
+
+                Project's website, currently offline due to company restructuring: <a href="https://tournesol.app" target="_blank">tournesol.app</a>
+              </div>
+
+              <!-- Pictures content -->
+
+              <div class="carousel-popover-credits-content" id="tournesol-popover-pictures-content">
+              </div>
+
             </div>
           </div>
 
@@ -890,6 +966,27 @@
       html: true,
       content: function () {
         return $('#qcopter-popover-pictures-content').html();
+      }
+    });
+
+    $('#tournesol-popover-credits-button').popover({
+      html: true,
+      content: function () {
+        return $('#tournesol-popover-credits-content').html();
+      }
+    });
+
+    $('#tournesol-popover-details-button').popover({
+      html: true,
+      content: function () {
+        return $('#tournesol-popover-details-content').html();
+      }
+    });
+
+    $('#tournesol-popover-pictures-button').popover({
+      html: true,
+      content: function () {
+        return $('#tournesol-popover-pictures-content').html();
       }
     });
 
