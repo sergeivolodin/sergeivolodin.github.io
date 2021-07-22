@@ -1096,6 +1096,239 @@
               <!-- Pictures content -->
 
               <div class="carousel-popover-credits-content" id="escape-rooms-popover-pictures-content">
+                <div style="text-align: center;">
+                  <a href="./escape-rooms/horror.jpg" target="_blank">
+                    <img src="./escape-rooms/horror.jpg" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-horror"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/ec.png" target="_blank">
+                    <img src="./escape-rooms/ec.png" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-not-reliable"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/cover.png" target="_blank">
+                    <img src="./escape-rooms/cover.png" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-cover"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/arch_en.png" target="_blank">
+                    <img src="./escape-rooms/arch_en.png" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-architecture"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/how.png" target="_blank">
+                    <img src="./escape-rooms/how.png" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-how"
+                    />
+                  </a>
+
+                  <br /><br />
+
+                  <a href="./escape-rooms/ec-web.png" target="_blank">
+                    <img src="./escape-rooms/ec-web.png" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-ec-web"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/custom-power-board-1.png" target="_blank">
+                    <img src="./escape-rooms/custom-power-board-1.png" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-power-board"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/rpi-all.png" target="_blank">
+                    <img src="./escape-rooms/rpi-all.png" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-rpi-all"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/servers.jpg" target="_blank">
+                    <img src="./escape-rooms/servers.jpg" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-servers"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/server-room.jpg" target="_blank">
+                    <img src="./escape-rooms/server-room.jpg" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-server-room"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/board.jpg" target="_blank">
+                    <img src="./escape-rooms/board.jpg" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-keyboard-board"
+                    />
+                  </a>
+
+                  <br /><br />
+
+                  <a href="./escape-rooms/board1.jpg" target="_blank">
+                    <img src="./escape-rooms/board1.jpg" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-clock-board"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/viewfinder.jpg" target="_blank">
+                    <img src="./escape-rooms/viewfinder.jpg" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-viewfinder-mounted"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/ec-python-ide.gif" target="_blank">
+                    <img src="./escape-rooms/ec-python-ide.gif" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-ec-python-ide"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/ec-blockly-ide.gif" target="_blank">
+                    <img src="./escape-rooms/ec-blockly-ide.gif" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-ec-blockly-ide"
+                    />
+                  </a>
+
+                  <a href="./escape-rooms/ec-blockly-ide-python-code.png" target="_blank">
+                    <img src="./escape-rooms/ec-blockly-ide-python-code.png" style="height: 80px; border-radius: 5px;"
+                    id="img-escape-rooms-ec-blockly-ide-python-code"
+                    />
+                  </a>
+                </div>
+
+                <script type="text/javascript">
+                  $(document).ready(function(){
+                      $('#img-escape-rooms-horror').popover({
+                          content: 'Escape rooms are usually low-budget, and before us they were even worse...',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-not-reliable').popover({
+                          content: '<a href="https://escape-control.com">escape-control.com</a> website shows some nasty parts of typical escape<br /> rooms and we propose a solution that simplifies the wiring',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-cover').popover({
+                          content: 'Cover image from the video shows the overview',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-architecture').popover({
+                          content: 'Proposed architecture: a single computer controls all the periphery (instead of many Arduinos in all sorts<br /> of weird places)',
+                          html: true,
+                          container: 'span',
+                          placement: 'left',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-how').popover({
+                          content: 'The Raspberry PI controls the escape room in EscapeControl, and the room has internet access via Pagekite<br /> and a web interface',
+                          html: true,
+                          container: 'span',
+                          placement: 'left',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-ec-web').popover({
+                          content: 'Web interface of an EscapeControl quest',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-power-board').popover({
+                          content: 'Our power boards',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-rpi-all').popover({
+                          content: 'Raspberry Pi is connected to the Internet, as well as to the AVR/Arduino devices<br /> via an internal Ethernet network',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-servers').popover({
+                          content: 'Servers in the "A Beautiful Mind" escape room. Fire hazard is less than it was before,<br />still not perfect due to budget',
+                          html: true,
+                          container: 'span',
+                          placement: 'left',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-server-room').popover({
+                          content: 'Power relays and arduinos in the "A Beautiful Mind" escape room. Some insulation and WAGOs<br />save us from fire, situation is not ideal due to budget',
+                          html: true,
+                          container: 'span',
+                          placement: 'left',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-keyboard-board').popover({
+                          content: 'Large capacitive keyboard control board',
+                          html: true,
+                          container: 'span',
+                          placement: 'left',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-clock-board').popover({
+                          content: 'Stepper motor control board',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-viewfinder-mounted').popover({
+                          content: 'CRT Viewfinder from an old camera mounted in a door peephole',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-ec-python-ide').popover({
+                          content: 'IDE with autocompletion from EscapeControl web interface',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-ec-blockly-ide').popover({
+                          content: 'Blockly IDE from EscapeControl web interface',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-escape-rooms-ec-blockly-ide-python-code').popover({
+                          content: 'The python code generated from a Blockly listing from the previous picture',
+                          html: true,
+                          container: 'span',
+                          placement: 'left',
+                          trigger: 'hover'
+                      });
+                  });
+                </script>
               </div>
             </div>
           </div>
