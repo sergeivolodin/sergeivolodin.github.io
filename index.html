@@ -59,8 +59,8 @@
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1" class=""></li>
           <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-        <!-- <li data-target="#myCarousel" data-slide-to="3" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="4" class=""></li> -->
+          <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+          <!-- <li data-target="#myCarousel" data-slide-to="4" class=""></li> -->
         </ol>
         <div class="carousel-inner" role="listbox">
 
@@ -699,12 +699,115 @@
                 on the <a href="https://eageneva.org/" target="_blank">Effective Altruism Geneva</a> forum
                 <br /><br />
 
-                Project's website, currently offline due to company restructuring: <a href="https://tournesol.app" target="_blank">tournesol.app</a>
+                Project's website, currently offline due to company restructuring: <a href="https://tournesol.app" target="_blank">tournesol.app</a>.
+                <a href="https://twitter.com/TournesolApp" target="_blank">Project's twitter</a>
               </div>
 
               <!-- Pictures content -->
 
               <div class="carousel-popover-credits-content" id="tournesol-popover-pictures-content">
+                <a href="https://twitter.com/sergeivolodinch/status/1390712797189844999" target="_blank">
+                  <img src="./tournesol/extension.jpeg" style="height: 80px; border-radius: 5px;"
+                  id="img-tournesol-extension"
+                   />
+                </a>
+
+                <a href="./tournesol/hypers.png" target="_blank">
+                  <img src="./tournesol/hypers.png" style="height: 80px; border-radius: 5px;"
+                  id="img-tournesol-hypers"
+                   />
+                </a>
+
+                <a href="./tournesol/ratings-charts.png" target="_blank">
+                  <img src="./tournesol/ratings-charts.png" style="height: 80px; border-radius: 5px;"
+                  id="img-tournesol-ratings-charts"
+                   />
+                </a>
+
+                <a href="./tournesol/search-many.png" target="_blank">
+                  <img src="./tournesol/search-many.png" style="height: 80px; border-radius: 5px;"
+                  id="img-tournesol-search-many"
+                   />
+                </a>
+                <br /><br />
+
+                <a href="./tournesol/search.jpeg" target="_blank">
+                  <img src="./tournesol/search.jpeg" style="height: 80px; border-radius: 5px;"
+                  id="img-tournesol-search"
+                   />
+                </a>
+
+                <a href="./tournesol/sliders-confidence.png" target="_blank">
+                  <img src="./tournesol/sliders-confidence.png" style="height: 80px; border-radius: 5px;"
+                  id="img-tournesol-sliders-confidence"
+                   />
+                </a>
+
+                <a href="./tournesol/stats.png" target="_blank">
+                  <img src="./tournesol/stats.png" style="height: 80px; border-radius: 5px;"
+                  id="img-tournesol-stats"
+                   />
+                </a>
+
+                <script type="text/javascript">
+                  $(document).ready(function(){
+                      $('#img-tournesol-extension').popover({
+                          content: 'Our Firefox/Chrome browser extension with recommendations from the backend',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-tournesol-hypers').popover({
+                          content: 'Different hyperparameters lead to different videos on top of search results',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-tournesol-ratings-charts').popover({
+                          content: 'Visualization of the ratings given by contributors',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-tournesol-search-many').popover({
+                          content: 'Search results on our website',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-tournesol-search').popover({
+                          content: 'Search results with custom parameters',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-tournesol-sliders-confidence').popover({
+                          content: 'Comparison page shows sliders for different criteria',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-tournesol-stats').popover({
+                          content: 'We have about 2000 contributors<br /> who left around 50k comparisons on 3k videos from YouTube',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+                    });
+                </script>
               </div>
 
             </div>
