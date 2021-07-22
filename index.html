@@ -817,17 +817,141 @@
 
           <div class="item">
             <div class="container">
+              <img src="ap/exponent_1.49_trial_2cfcb_00007_adversarial_doing_splits.mp4.gif"
+                height="315" />
+              <br /><br />
+              
+              <!-- Description -->
+
+              <p>Defending against adversarial policies in Reinforcement Learning via alternating training<br />
+
+                <!-- Credits button -->
+
+                2020 <button type="button" class="btn btn-primary btn-success" href="#" id="ap-popover-credits-button"
+                  title="Credits" data-toggle="popover" data-placement="top" html="true">
+                  Credits
+                </button> <button type="button" class="btn btn-primary btn-info" href="#" id="ap-popover-details-button"
+                title="Details" data-toggle="popover" data-placement="top" html="true">
+                  Details
+                </button> <button type="button" class="btn btn-primary btn-warning" href="#" id="ap-popover-pictures-button"
+                title="Pictures" data-toggle="popover" data-placement="top" html="true">
+                  Pictures
+                </button>
+
+              </p>
+
+              <!-- Credits content -->
+
+              <div class="carousel-popover-credits-content" id="ap-popover-credits-content">
+                <b>SERGEI</b><br />
+                <i>coding, brainstorming, writing the blog post</i>
+                <br /><br />
+
+                <b><a href="https://www.gleave.me/" target="_blank">ADAM GLEAVE</a></b><br />
+                <i>brainstorming, advising, writing the blog post</i>
+                <br /><br />
+
+                <b><a href="https://www.berkeley.edu/" target="_blank">UNIVERSITY OF CALIFORNIA, BERKELEY</a>;
+                  <a href="https://humancompatible.ai/" target="_blank">CENTER FOR HUMAN-COMPATIBLE AI</a></b><br />
+                <i>infrastructure, funding</i>
+              </div>
+
+              <!-- Details content -->
+
+              <div class="carousel-popover-credits-content" id="ap-popover-details-content">
+                We wanted to develop better defenses and found out that there are much more adversarial policies...
+                <br /><br />
+
+                <i class="fa fa-book icon-carousel-details"></i>
+                <a href="https://forum.effectivealtruism.org/posts/YscrJFofd6S8eJGS8/defending-against-adversarial-policies-in-reinforcement" target="_blank">Blog post with results</a>
+                <br /><br />
+
+                <i class="fa fa-github icon-carousel-details" aria-hidden="true"></i>
+                <a href="https://github.com/HumanCompatibleAI/better-adversarial-defenses" target="_blank">Project's code</a>
+
+              </div>
+
+              <!-- Pictures content -->
+
+              <div class="carousel-popover-credits-content" id="ap-popover-pictures-content">
+                <a href="./ap/exponent_1.99_trial_2cfcb_00004_adversarial_sit_then_jump_rapidly.mp4.gif" target="_blank">
+                  <img src="./ap/exponent_1.99_trial_2cfcb_00004_adversarial_sit_then_jump_rapidly.mp4.gif" style="height: 80px; border-radius: 5px;"
+                  id="img-ap-sit-jump"
+                   />
+                </a>
+
+                <a href="./ap/new.gif" target="_blank">
+                  <img src="./ap/new.gif" style="height: 80px; border-radius: 5px;"
+                  id="img-new-policy"
+                   />
+                </a>
+
+                <a href="./ap/video.000000.mp4.gif" target="_blank">
+                  <img src="./ap/video.000000.mp4.gif" style="height: 80px; border-radius: 5px;"
+                  id="img-ap-standard-policy"
+                   />
+                </a>
+
+                <a href="./ap/which_and_burst_size.png" target="_blank">
+                  <img src="./ap/which_and_burst_size.png" style="height: 80px; border-radius: 5px;"
+                  id="img-ap-which-burst"
+                   />
+                </a>
+
+                <a href="./ap/win_rate.png" target="_blank">
+                  <img src="./ap/win_rate.png" style="height: 80px; border-radius: 5px;"
+                  id="img-ap-win-rate"
+                   />
+                </a>
+
+                <script type="text/javascript">
+                  $(document).ready(function(){
+                      $('#img-ap-sit-jump').popover({
+                          content: 'Adversarial policy: it sits and then jumps',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-new-policy').popover({
+                          content: 'Novel adversarial policy',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-ap-standard-policy').popover({
+                          content: 'Standard (non-adversarial) policy actually makes contact',
+                          html: true,
+                          container: 'span',
+                          placement: 'right',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-ap-which-burst').popover({
+                          content: 'Training algorithm alternates training the opponent and the victim',
+                          html: true,
+                          container: 'span',
+                          placement: 'left',
+                          trigger: 'hover'
+                      });
+
+                      $('#img-ap-win-rate').popover({
+                          content: 'Alternating training leads to oscillating rewards which stabilize towards the end',
+                          html: true,
+                          container: 'span',
+                          placement: 'left',
+                          trigger: 'hover'
+                      });
+                    });
+                  </script>
+              </div>
             </div>
           </div>
 
           <!-- Escape Room project -->
-
-          <div class="item">
-            <div class="container">
-            </div>
-          </div>
-
-          <!-- Fault tolerance project -->
 
           <div class="item">
             <div class="container">
@@ -1090,6 +1214,27 @@
       html: true,
       content: function () {
         return $('#tournesol-popover-pictures-content').html();
+      }
+    });
+
+    $('#ap-popover-credits-button').popover({
+      html: true,
+      content: function () {
+        return $('#ap-popover-credits-content').html();
+      }
+    });
+
+    $('#ap-popover-details-button').popover({
+      html: true,
+      content: function () {
+        return $('#ap-popover-details-content').html();
+      }
+    });
+
+    $('#ap-popover-pictures-button').popover({
+      html: true,
+      content: function () {
+        return $('#ap-popover-pictures-content').html();
       }
     });
 
