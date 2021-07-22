@@ -53,20 +53,22 @@
   <div class="videos_carousel_outer">
 
     <div class="container">
-      <div id="myCarousel" class="carousel slide contentbox" data-ride="carousel" data-interval="10000">
+      <div id="projects-carousel" class="carousel slide contentbox" data-ride="carousel" data-interval="10000">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="3" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+          <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#projects-carousel" data-slide-to="1" class=""></li>
+          <li data-target="#projects-carousel" data-slide-to="2" class=""></li>
+          <li data-target="#projects-carousel" data-slide-to="3" class=""></li>
+          <li data-target="#projects-carousel" data-slide-to="4" class=""></li>
+          <li data-target="#projects-carousel" data-slide-to="5" class=""></li>
+          <li data-target="#projects-carousel" data-slide-to="6" class=""></li>
         </ol>
         <div class="carousel-inner" role="listbox">
 
           <!-- CHILI EPFL Vectors. Add EPFL logo -->
 
-          <div class="item active">
+          <div class="item active" data-name="chili-epfl-vectors-qml-ar">
             <div class="container">
 
               <!-- Youtube video -->
@@ -195,7 +197,7 @@
 
           <!-- Causality project. Add EPFL logo (old) and Google logo (old) -->
 
-          <div class="item">
+          <div class="item" data-name="causality-simplicity-consciousness-google-epfl">
             <div class="container">
 
               <!-- Youtube video -->
@@ -358,7 +360,7 @@
 
           <!-- Quadcopter project -->
 
-          <div class="item">
+          <div class="item" data-name="quadcopter-lsh-mipt">
             <div class="container">
               <!-- Youtube video -->
               
@@ -646,7 +648,7 @@
 
           <!-- Tournesol project -->
 
-          <div class="item">
+          <div class="item" data-name="tournesol-ethics-recommender-systems">
             <div class="container">
               <!-- Youtube video -->
 
@@ -838,7 +840,7 @@
 
           <!-- CHAI project -->
 
-          <div class="item">
+          <div class="item" data-name="adversarial-policies-berkeley-chai-ai-safety">
             <div class="container">
               <img src="ap/exponent_1.49_trial_2cfcb_00007_adversarial_doing_splits.mp4.gif"
                 height="315" />
@@ -987,7 +989,7 @@
 
           <!-- Escape Room project -->
 
-          <div class="item">
+          <div class="item" data-name="escape-rooms-phobia-escapecontrol">
             <div class="container">
               custom avr firmware https://youtu.be/KBojyCEgfpo
             </div>
@@ -995,18 +997,18 @@
 
           <!-- Other project -->
 
-          <div class="item">
+          <div class="item" data-name="other-projects">
             <div class="container">
               AI ethics discussion on the EA Geneva forum. parrots image. Navalny ! image. EPFL labs.
             </div>
           </div>
 
         </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <a class="left carousel-control" href="#projects-carousel" role="button" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">Previous</span>
           <!-- <span class="carousel-control-text">Previous</span> -->
         </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <a class="right carousel-control" href="#projects-carousel" role="button" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">Next</span>
           <!-- <span class="carousel-control-text">Next</span> -->
         </a>
@@ -1274,6 +1276,27 @@
     });
 
   });
+
+// setting inner link to carousel slides
+// https://stackoverflow.com/questions/38407398/bootstrap-carousel-with-different-hashtag-url-id
+var url = document.location.toString();
+
+if (url.match('#')) {
+    // Clear active item
+    $('#projects-carousel .item.active').removeClass('active');
+
+    // Activate item number #hash
+    var index = url.split('#')[1];
+    $('#projects-carousel .item[data-name="' + index + '"]').addClass('active');
+}
+
+$('#projects-carousel').on('slid.bs.carousel', function () {
+    // Update location based on slide
+    var item = $(this).find('.item.active').data('name');
+    if (item) window.location.hash = "#" + item; // Doesn't work on SO
+    console.log(item);
+})
+
 </script>
 
 </html>
