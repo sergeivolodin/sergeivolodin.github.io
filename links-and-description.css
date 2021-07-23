@@ -1,0 +1,24 @@
+.links-and-description {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.links-and-description-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.links-description-highlighted-text {
+    font-size: 2em;
+}
+
+.links-and-description table td {
+    padding: 20px;
+}
+
+.links-description-left-emoji {
+    white-space: nowrap;
+    font-size: 5em;
+}
