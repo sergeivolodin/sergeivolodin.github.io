@@ -27,3 +27,7 @@ h1.top_line_h1 {
   height: 80px;
   border-radius: 5px;
 }
+
+.footer {
+  text-align: center;
+}
