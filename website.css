@@ -42,3 +42,7 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(104, 0, 105);
 }
+
+.project-description-p {
+  font-size: 1.1em;
+}
