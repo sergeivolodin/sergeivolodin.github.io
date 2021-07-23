@@ -61,13 +61,13 @@
         data-interval="0">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#projects-carousel" data-slide-to="1" class=""></li>
-          <li data-target="#projects-carousel" data-slide-to="2" class=""></li>
-          <li data-target="#projects-carousel" data-slide-to="3" class=""></li>
-          <li data-target="#projects-carousel" data-slide-to="4" class=""></li>
-          <li data-target="#projects-carousel" data-slide-to="5" class=""></li>
-          <li data-target="#projects-carousel" data-slide-to="6" class=""></li>
+          <li data-target="#projects-carousel" data-slide-to="0" class="active" data-name="chili-epfl-vectors-qml-ar"></li>
+          <li data-target="#projects-carousel" data-slide-to="1" class="" data-name="causality-simplicity-consciousness-google-epfl"></li>
+          <li data-target="#projects-carousel" data-slide-to="2" class="" data-name="quadcopter-lsh-mipt"></li>
+          <li data-target="#projects-carousel" data-slide-to="3" class="" data-name="tournesol-ethics-recommender-systems"></li>
+          <li data-target="#projects-carousel" data-slide-to="4" class="" data-name="adversarial-policies-berkeley-chai-ai-safety"></li>
+          <li data-target="#projects-carousel" data-slide-to="5" class="" data-name="escape-rooms-phobia-escapecontrol"></li>
+          <li data-target="#projects-carousel" data-slide-to="6" class="" data-name="other-projects"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
 
@@ -1750,9 +1750,15 @@
     // Clear active item
     $('#projects-carousel .item.active').removeClass('active');
 
+    // Clear active indicator
+    $('#projects-carousel li.active').removeClass('active');
+
     // Activate item number #hash
     var index = url.split('#')[1];
     $('#projects-carousel .item[data-name="' + index + '"]').addClass('active');
+
+    // Activate indicator
+    $('#projects-carousel li[data-name="' + index + '"]').addClass('active');
   }
 
   $('#projects-carousel').on('slid.bs.carousel', function () {
