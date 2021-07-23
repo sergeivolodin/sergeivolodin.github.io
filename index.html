@@ -213,7 +213,7 @@
               <!-- Youtube video -->
 
               <a href="./causality-simplicity/causal-preview.png" target="_blank">
-                <img src="./causality-simplicity/causal-preview.png" width="560" height="315" />
+                <img src="./causality-simplicity/causal-preview-small.png" width="560" height="315" />
               </a>
 
               <!-- Description -->
@@ -385,7 +385,7 @@
 
               <div class="embed-responsive embed-responsive-16by9">
                 <video width="560" height="315" controls="controls" preload="none"
-                  poster="./qcopter/qcopter-preview.png">
+                  poster="./qcopter/qcopter-preview-small.png">
                   <source src="http://escape-control.com:8055/qcopter-en-2013.mp4" type="video/mp4">
                 </video>
               </div>
@@ -569,6 +569,13 @@
                     id="img-qcopter-lsh-2013" />
                 </a>
 
+                <br /><br />
+
+                <a href="./qcopter/qcopter-preview.png" target="_blank">
+                  <img src="./qcopter/qcopter-preview-small.png" style="height: 80px; border-radius: 5px;"
+                    id="img-qcopter-preview-small" />
+                </a>
+
                 <script type="text/javascript">
                   $(document).ready(function () {
                     $('#img-qcopter-oscilloscope').popover({
@@ -658,6 +665,15 @@
                       placement: 'right',
                       trigger: 'hover'
                     });
+
+                    $('#img-qcopter-preview-small').popover({
+                      content: 'Video cover image',
+                      html: true,
+                      container: 'span',
+                      placement: 'right',
+                      trigger: 'hover'
+                    });
+                    
                   });
                 </script>
 
@@ -1011,7 +1027,7 @@
               <!-- The video -->
 
               <div class="embed-responsive embed-responsive-16by9">
-                <video width="560" height="315" controls="controls" preload="none" poster="./escape-rooms/cover.png">
+                <video width="560" height="315" controls="controls" preload="none" poster="./escape-rooms/cover-small.png">
                   <source src="http://escape-control.com:8055/escape-room-phobia-1-at2.mp4" type="video/mp4">
                 </video>
               </div>
@@ -1136,7 +1152,7 @@
                   </a>
 
                   <a href="./escape-rooms/cover.png" target="_blank">
-                    <img src="./escape-rooms/cover.png" style="height: 80px; border-radius: 5px;"
+                    <img src="./escape-rooms/cover-small.png" style="height: 80px; border-radius: 5px;"
                       id="img-escape-rooms-cover" />
                   </a>
 
