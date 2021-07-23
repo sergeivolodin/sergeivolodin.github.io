@@ -3,12 +3,8 @@ h1.top_line_h1 {
   white-space: nowrap;
 }
 
-.top_line_h1_container {
+.all_container {
   min-width: 1300px;
-  width: auto;
-  display: flex;
-   justify-content: space-around;
-
 }
 
 .videos_carousel_outer {
@@ -42,12 +38,7 @@ h1.top_line_h1 {
   text-align: center;
 }
 
-html {
-  overflow: scroll;
-}
-
 body {
   background-color: rgb(255, 255, 255);
   color: rgb(104, 0, 105);
-  overflow: scroll;
 }
