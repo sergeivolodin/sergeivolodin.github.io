@@ -1,9 +1,10 @@
 /* From https://www.w3schools.com/bootstrap/bootstrap_ref_js_popover.asp */
-  
+
+  /* For all popovers */
   /* Popover Header */
   .popover-title {
-    background-color: #73AD21;
-    color: #FFFFFF;
+    background-color: #73ad2163;
+    color: #000000ab;
     font-size: 28px;
     text-align:center;
     width: px;
@@ -12,8 +13,8 @@
   /* Popover Body */
   .popover-content {
     width: 750px;
-    background-color: coral;
-    color: #FFFFFF;
+    background-color: rgba(255, 196, 175, 0.322);
+    color: #000000;
     padding: 25px;
   }
   
