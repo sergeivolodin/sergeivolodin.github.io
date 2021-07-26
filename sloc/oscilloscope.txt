@@ -1,0 +1,19 @@
+Repo: github.com/it-workshop/oscilloscope
+
+ubuntu-mate@ubuntu-mate:~/Oscilloscope$ git fame --by-type --include *.c,*.h,*.S,*.cpp
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:00
+
+Statistics based on HEAD
+Active files: 32
+Active lines: 3,762
+Total commits: 34
+
+Note: Files matching MIME type image, binary has been ignored
+
++----------+-------+---------+-------+-----------------------+-----+-----+---+-----+
+| name     | loc   | commits | files | distribution (%)      | c   | h   | S | cpp |
++----------+-------+---------+-------+-----------------------+-----+-----+---+-----+
+| etoestja | 3,762 | 34      | 32    | 100.0 / 100.0 / 100.0 | 903 | 183 | 1 | 137 |
++----------+-------+---------+-------+-----------------------+-----+-----+---+-----+
+1 row in set
+

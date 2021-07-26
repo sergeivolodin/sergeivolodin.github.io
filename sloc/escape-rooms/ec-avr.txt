@@ -1,0 +1,19 @@
+(base) sergei@dev:~/git/arduino-lib$ git fame --by-type --include *.ino,*.cpp,*.h,*.sh
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:00
+
+Statistics based on HEAD
+Active files: 46
+Active lines: 5,051
+Total commits: 24
+
+Note: Files matching MIME type image, binary has been ignored
+
++----------------+-------+---------+-------+--------------------+-----+----+-----+----+
+| name           | loc   | commits | files | distribution (%)   | cpp | h  | ino | sh |
++----------------+-------+---------+-------+--------------------+-----+----+-----+----+
+| Sergey Volodin | 5,031 | 17      | 45    | 99.6 / 70.8 / 97.8 | 149 | 88 | 43  | 3  |
+| Sergei Volodin | 12    | 6       | 4     |  0.2 / 25.0 /  8.7 | 9   | 1  | 1   | 0  |
+| Leonid Stryuk  | 8     | 1       | 2     |  0.2 /  4.2 /  4.3 | 2   | 1  | 0   | 0  |
++----------------+-------+---------+-------+--------------------+-----+----+-----+----+
+3 rows in set
+

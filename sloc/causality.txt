@@ -1,0 +1,20 @@
+Repo: https://github.com/sergia-ch/causality-disentanglement-rl
+
+(base) sergei@dev:~/git/causality-disentanglement-rl$ git fame --include *.py,*.gin,*.sh,*.config --by-type
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:04
+
+Statistics based on HEAD
+Active files: 249
+Active lines: 19,551
+Total commits: 893
+
+Note: Files matching MIME type image, binary has been ignored
+
++-----------------+--------+---------+-------+----------------------+------+------+----+
+| name            | loc    | commits | files | distribution (%)     | py   | gin  | sh |
++-----------------+--------+---------+-------+----------------------+------+------+----+
+| Sergei Volodin  | 19,551 | 891     | 293   | 100.0 / 99.8 / 117.7 | 2245 | 1301 | 3  |
+| dependabot[bot] | 0      | 2       | 0     |  0.0 /  0.2 /  0.0   | 0    | 0    | 0  |
++-----------------+--------+---------+-------+----------------------+------+------+----+
+2 rows in set
+

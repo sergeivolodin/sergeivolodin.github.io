@@ -1,0 +1,21 @@
+(base) sergei@dev:~/git/core$ git fame --by-type --include *.cpp,*.h,*.py,*.sh,*.pro
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:01
+
+Statistics based on HEAD
+Active files: 68
+Active lines: 5,944
+Total commits: 286
+
+Note: Files matching MIME type image, binary has been ignored
+
++----------------+-------+---------+-------+--------------------+-----+-----+-----+----+-----+
+| name           | loc   | commits | files | distribution (%)   | cpp | h   | py  | sh | pro |
++----------------+-------+---------+-------+--------------------+-----+-----+-----+----+-----+
+| Sergey Volodin | 4,755 | 230     | 67    | 80.0 / 80.4 / 98.5 | 548 | 179 | 543 | 25 | 37  |
+| Sergei Volodin | 724   | 31      | 20    | 12.2 / 10.8 / 29.4 | 38  | 170 | 76  | 0  | 0   |
+| Leonid Stryuk  | 365   | 18      | 6     |  6.1 /  6.3 /  8.8 | 65  | 14  | 64  | 0  | 0   |
+| Леонид Стрюк   | 100   | 1       | 5     |  1.7 /  0.3 /  7.4 | 7   | 3   | 24  | 0  | 0   |
+| Igor Mosyagin  | 0     | 6       | 0     |  0.0 /  2.1 /  0.0 | 0   | 0   | 0   | 0  | 0   |
++----------------+-------+---------+-------+--------------------+-----+-----+-----+----+-----+
+5 rows in set
+

@@ -1,0 +1,26 @@
+Repo: github.com/it-workshop/quadrocopter
+
+ubuntu-mate@ubuntu-mate:~/Quadrocopter$ git fame --by-type --include *.c,*.h,*.S,*.cpp,*.ui,*.ino
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:02
+
+Statistics based on HEAD
+Active files: 67
+Active lines: 8,749
+Total commits: 315
+
+Note: Files matching MIME type image, binary has been ignored
+
++-------------------------+-------+---------+-------+--------------------+-----+------+-----+---+-----+
+| name                    | loc   | commits | files | distribution (%)   | ino | cpp  | h   | c | ui  |
++-------------------------+-------+---------+-------+--------------------+-----+------+-----+---+-----+
+| Sergey Volodin          | 8,498 | 300     | 65    | 97.1 / 95.2 / 97.0 | 74  | 1576 | 587 | 1 | 617 |
+| OKDimOK                 | 171   | 7       | 8     |  2.0 /  2.2 / 11.9 | 23  | 50   | 18  | 0 | 0   |
+| Arshavir Ter-Gabrielyan | 62    | 1       | 3     |  0.7 /  0.3 /  4.5 | 3   | 0    | 0   | 0 | 0   |
+| Vadim                   | 18    | 2       | 4     |  0.2 /  0.6 /  6.0 | 0   | 9    | 3   | 0 | 0   |
+| Aleksandr Derbenev      | 0     | 1       | 0     |  0.0 /  0.3 /  0.0 | 0   | 0    | 0   | 0 | 0   |
+| Konstantin Lopuhin      | 0     | 2       | 0     |  0.0 /  0.6 /  0.0 | 0   | 0    | 0   | 0 | 0   |
+| Sergei                  | 0     | 1       | 0     |  0.0 /  0.3 /  0.0 | 0   | 0    | 0   | 0 | 0   |
+| root                    | 0     | 1       | 0     |  0.0 /  0.3 /  0.0 | 0   | 0    | 0   | 0 | 0   |
++-------------------------+-------+---------+-------+--------------------+-----+------+-----+---+-----+
+8 rows in set
+

@@ -1,0 +1,19 @@
+Repo: github.com/HumanCompatibleAI/better-adversarial-defenses
+
+(base) sergei@dev:~/git/better-adversarial-defenses$ git fame --include *.py,*.gin,*.sh,*.config --by-type
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:00
+
+Statistics based on HEAD
+Active files: 68
+Active lines: 5,922
+Total commits: 323
+
+Note: Files matching MIME type image, binary has been ignored
+
++----------------+-------+---------+-------+-----------------------+------+-----+----+--------+
+| name           | loc   | commits | files | distribution (%)      | py   | gin | sh | config |
++----------------+-------+---------+-------+-----------------------+------+-----+----+--------+
+| Sergei Volodin | 5,922 | 323     | 82    | 100.0 / 100.0 / 120.6 | 1124 | 3   | 45 | 1      |
++----------------+-------+---------+-------+-----------------------+------+-----+----+--------+
+1 row in set
+

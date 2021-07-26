@@ -1,0 +1,17 @@
+(base) sergei@dev:~/git/phobiaknights$ git fame --by-type --include *.cpp,*.h,*.ini,*.php,*.c,*.py,*.sh,*.pppoe,*.ino
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:04
+
+Statistics based on HEAD
+Active files: 365
+Active lines: 15,884
+Total commits: 9
+
+Note: Files matching MIME type image, binary has been ignored
+
++----------+--------+---------+-------+-----------------------+------+-----+-----+-----+---+-----+----+----+-------+
+| name     | loc    | commits | files | distribution (%)      | cpp  | h   | ino | ini | c | php | py | sh | pppoe |
++----------+--------+---------+-------+-----------------------+------+-----+-----+-----+---+-----+----+----+-------+
+| etoestja | 15,884 | 9       | 365   | 100.0 / 100.0 / 100.0 | 2603 | 743 | 48  | 150 | 7 | 89  | 1  | 8  | 1     |
++----------+--------+---------+-------+-----------------------+------+-----+-----+-----+---+-----+----+----+-------+
+1 row in set
+
