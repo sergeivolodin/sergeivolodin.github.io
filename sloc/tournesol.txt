@@ -1,25 +1,26 @@
 Repo: github.com/tournesol-app/tournesol
 
-ubuntu-mate@ubuntu-mate:~/tournesol$ git fame --by-type --include *.py,*.js,*.gin,*.sh
-Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:14
+(base) sergei@dev:~/git/tournesol$ git fame --by-type --include *.sh,*.py,*.js,*.gin --exclude API/,frontend/api
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:02
 
 Statistics based on HEAD
-Active files: 91
-Active lines: 18,971
-Total commits: 150
+Active files: 64
+Active lines: 14,797
+Total commits: 151
 
 Note: Files matching MIME type image, binary has been ignored
 
 +-------------------+--------+---------+-------+---------------------+------+-----+----+-----+
 | name              | loc    | commits | files | distribution (%)    | py   | gin | sh | js  |
 +-------------------+--------+---------+-------+---------------------+------+-----+----+-----+
-| Sergei Volodin    | 17,679 | 98      | 91    | 93.2 / 65.3 / 100.0 | 1284 | 40  | 17 | 412 |
-| Louis Faucon      | 986    | 22      | 10    |  5.2 / 14.7 / 11.0  | 0    | 0   | 0  | 170 |
-| Gresille & Siffle | 240    | 2       | 4     |  1.3 /  1.3 /  4.4  | 12   | 0   | 0  | 0   |
-| Felix Grimberg    | 38     | 14      | 1     |  0.2 /  9.3 /  1.1  | 0    | 0   | 6  | 0   |
-| Lê Nguyên Hoang   | 28     | 10      | 2     |  0.1 /  6.7 /  2.2  | 0    | 0   | 0  | 20  |
+| Sergei Volodin    | 13,505 | 98      | 64    | 91.3 / 64.9 / 100.0 | 1276 | 40  | 17 | 222 |
+| Louis Faucon      | 986    | 22      | 10    |  6.7 / 14.6 / 15.6  | 0    | 0   | 0  | 170 |
+| Gresille & Siffle | 240    | 2       | 4     |  1.6 /  1.3 /  6.2  | 12   | 0   | 0  | 0   |
+| Felix Grimberg    | 38     | 14      | 1     |  0.3 /  9.3 /  1.6  | 0    | 0   | 6  | 0   |
+| Lê Nguyên Hoang   | 28     | 10      | 2     |  0.2 /  6.6 /  3.1  | 0    | 0   | 0  | 20  |
 | Aidan             | 0      | 1       | 0     |  0.0 /  0.7 /  0.0  | 0    | 0   | 0  | 0   |
+| Sergia            | 0      | 1       | 0     |  0.0 /  0.7 /  0.0  | 0    | 0   | 0  | 0   |
 | dependabot[bot]   | 0      | 3       | 0     |  0.0 /  2.0 /  0.0  | 0    | 0   | 0  | 0   |
 +-------------------+--------+---------+-------+---------------------+------+-----+----+-----+
-7 rows in set
+8 rows in set
 

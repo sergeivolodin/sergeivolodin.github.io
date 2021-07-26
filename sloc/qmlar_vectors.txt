@@ -1,0 +1,43 @@
+=====
+Repo: github.com/chili-epfl/qml-ar
+
+ubuntu-mate@ubuntu-mate:~/qml-ar$ git fame --by-type --include "*.cpp,*.h,*.py,*.frag,*.vert"
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:05
+
+Statistics based on HEAD
+Active files: 143
+Active lines: 11,482
+Total commits: 520
+
+Note: Files matching MIME type image, binary has been ignored
+
++----------------+--------+---------+-------+---------------------+------+----+------+------+------+
+| name           | loc    | commits | files | distribution (%)    | cpp  | py | h    | frag | vert |
++----------------+--------+---------+-------+---------------------+------+----+------+------+------+
+| Sergei Volodin | 11,365 | 515     | 169   | 99.0 / 99.0 / 118.2 | 1739 | 50 | 1996 | 0    | 0    |
+| Ayberk Özgür   | 117    | 4       | 4     |  1.0 /  0.8 /  2.8  | 9    | 0  | 8    | 0    | 0    |
+| Sergia         | 0      | 1       | 0     |  0.0 /  0.2 /  0.0  | 0    | 0  | 0    | 0    | 0    |
++----------------+--------+---------+-------+---------------------+------+----+------+------+------+
+3 rows in set
+
+
+=====
+(base) sergei@dev:~/git/cellulo-vectors-ar$ git fame --by-type --include *.qml,*.sh,*.py,*.cpp,*.h
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:01
+
+Statistics based on HEAD
+Active files: 73
+Active lines: 9,055
+Total commits: 357
+
+Note: Files matching MIME type image, binary has been ignored
+
++----------------+-------+---------+-------+---------------------+----+----+------+-----+---+
+| name           | loc   | commits | files | distribution (%)    | sh | py | qml  | cpp | h |
++----------------+-------+---------+-------+---------------------+----+----+------+-----+---+
+| Sergei Volodin | 8,675 | 350     | 114   | 95.8 / 98.0 / 156.2 | 1  | 4  | 1208 | 13  | 5 |
+| wafajohal      | 373   | 5       | 10    |  4.1 /  1.4 / 13.7  | 0  | 0  | 69   | 5   | 0 |
+| Ayberk Özgür   | 7     | 2       | 1     |  0.1 /  0.6 /  1.4  | 0  | 0  | 1    | 0   | 0 |
++----------------+-------+---------+-------+---------------------+----+----+------+-----+---+
+3 rows in set
+
