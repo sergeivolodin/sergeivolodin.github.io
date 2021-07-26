@@ -1,0 +1,19 @@
+(base) sergei@dev:~/git/cellulo-vectors-ar$ git fame --by-type --include *.qml,*.sh,*.py,*.cpp,*.h
+Git Fame:      100% |ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo| Time:   0:00:01
+
+Statistics based on HEAD
+Active files: 73
+Active lines: 9,055
+Total commits: 357
+
+Note: Files matching MIME type image, binary has been ignored
+
++----------------+-------+---------+-------+---------------------+----+----+------+-----+---+
+| name           | loc   | commits | files | distribution (%)    | sh | py | qml  | cpp | h |
++----------------+-------+---------+-------+---------------------+----+----+------+-----+---+
+| Sergei Volodin | 8,675 | 350     | 114   | 95.8 / 98.0 / 156.2 | 1  | 4  | 1208 | 13  | 5 |
+| wafajohal      | 373   | 5       | 10    |  4.1 /  1.4 / 13.7  | 0  | 0  | 69   | 5   | 0 |
+| Ayberk Özgür   | 7     | 2       | 1     |  0.1 /  0.6 /  1.4  | 0  | 0  | 1    | 0   | 0 |
++----------------+-------+---------+-------+---------------------+----+----+------+-----+---+
+3 rows in set
+
