@@ -280,6 +280,7 @@
               <!-- Details content -->
 
               <div class="carousel-popover-details-content" id="causality-popover-details-content">
+                <div style="font-size: 90%;">
                 <i class="fa fa-book icon-carousel-details"></i>
                 My Master's Thesis at EPFL, 2020-2021
                 &laquo;<a
@@ -295,12 +296,14 @@
                 implements learning a sparse causal model of an RL environment from pixels in PyTorch.
                 Please note the <a href="https://twitter.com/sergeivolodinch/status/1365669438461247489"
                   target="_blank">
-                  resource requirements</a>...
-                <br /><br />
+                  resource requirements</a>... My library
+                  <a href="https://github.com/sergia-ch/gin_tune" target="_blank">gin-tune</a>
+                  integrates gin-config and ray tune.
+                <br />
 
                 <i class="fa fa-book icon-carousel-details"></i>
                 Our paper from the Google Research internship
-                &laquo;<a href="https://arxiv.org/pdf/2002.05217.pdf" target="_blank">Resolving Spurious Correlations in
+                &laquo;<a href="https://arxiv.org/abs/2002.05217" target="_blank">Resolving Spurious Correlations in
                   Causal Models
                   of Environments via Interventions</a>&raquo;. Here we define spurious correlations
                 in RL environments and propose ways to deal with them.
@@ -327,6 +330,7 @@
                   Machine Learning Summer School 2020
                 </a>.
 
+                </div>
               </div>
 
               <!-- Pictures content -->
@@ -339,7 +343,7 @@
                         <img src="./causality-simplicity/google_internship.png" height="100px" loading="lazy" />
                       </a>
                       <br />
-                      <i><a href="https://arxiv.org/pdf/2002.05217.pdf" target="_blank">Google Internship project</a>:
+                      <i><a href="https://arxiv.org/abs/2002.05217" target="_blank">Google Internship project</a>:
                         Our method obtains a causal model of an RL environment
                       </i>
                     </td>
@@ -398,9 +402,8 @@
 
               <div style="height: 5px"></div>
 
-              <a href="https://www.letnyayashkola.org/" target="_blank">
-                <img src="icons/lsh-logo.png" style="height: 50px;" />
-              </a>
+              <a href="https://www.letnyayashkola.org/" target="_blank"><img
+                src="icons/lsh-logo.png" style="height: 50px;" /></a>
 
               <a href="https://mipt.ru/en/" target="_blank">
                 <img src="icons/MIPT-Logo.jpg" style="height: 50px;" />
@@ -617,7 +620,7 @@
                     });
 
                     $('#img-qcopter-wifi-2013').popover({
-                      content: 'Our low-budget WiFi access point based on a Nokia N900 and a Raspberry Pi, 2013',
+                      content: 'Our low-budget WiFi access point based<br /> on a Nokia N900 and a Raspberry Pi, 2013',
                       html: true,
                       container: 'body',
                       placement: 'right',
@@ -795,7 +798,7 @@
                 <br /><br />
 
                 <i class="fa fa-book icon-carousel-details"></i>
-                Our whitepaper &laquo;<a href="https://arxiv.org/pdf/2107.07334.pdf" target="_blank">Tournesol: A quest
+                Our whitepaper &laquo;<a href="https://arxiv.org/abs/2107.07334" target="_blank">Tournesol: A quest
                   for a large, secure and trustworthy database of reliable human judgments</a>&raquo;
                 <br /><br />
 
@@ -908,7 +911,7 @@
                       content: 'We have about 2000 contributors<br /> who left around 50k comparisons on 3k videos from YouTube',
                       html: true,
                       container: 'body',
-                      placement: 'right',
+                      placement: 'left',
                       trigger: 'hover'
                     });
                   });
@@ -1117,6 +1120,7 @@
               <!-- Credits content -->
 
               <div class="carousel-popover-credits-content" id="escape-rooms-popover-credits-content">
+                <div style="font-size: 90%">
                 <center><b>&laquo;A Beautiful Mind&raquo; escape room, 2014</b></center><br />
 
                 <b><a href="http://aglinsky.ru/" target="_blank">ANDREY GLINSKY</a>,
@@ -1150,13 +1154,17 @@
                 <b><a href="https://se.linkedin.com/in/shrimpsizemoose" target="_blank">IGOR MOSYAGIN</a> (<img src="./icons/code-logo.png" style="height: 1em" />30% SLOC for front),
                   <a href="https://vk.com/id431426114" target="_blank">BOGDAN BAGNO</a> (<img src="./icons/code-logo.png" style="height: 1em" />38% SLOC for front)</b>:
                 frontend engineering, technical support
+                </div>
               </div>
 
               <!-- Details content -->
 
               <div class="carousel-popover-credits-content" id="escape-rooms-popover-details-content">
+                <div style="font-size: 90%">
                 Hardware and software for an escape room &laquo;A Beautiful Mind&raquo; in Moscow, 2014. The innovation
-                is a centralized architecture with Ethernet-controlled and flashed AVR devices,
+                is a centralized architecture with Ethernet-controlled and
+                <a href="https://github.com/OpenEscapeControl" target="_blank">remotely flashed</a>
+                AVR devices,
                 and a remote (via internet) debugging system. The tasks (see the cover video) are also unique and cute.
                 The quest is now closed (after a few years in business, see
                 <a href="https://mir-kvestov.ru/quests/vyhod-igry-razuma" target="_blank">this</a>,
@@ -1173,7 +1181,7 @@
                 <i class="fa fa-youtube-play icon-carousel-details" aria-hidden="true"></i>
                 <a href="https://youtu.be/kXbubjs7aTA" target="_blank">Original video 🇷🇺</a>
 
-                <hr />
+                <br /><br />
 
                 <a href="https://escape-control.com" target="_blank">EscapeControl</a>:
                 escape room framework with Internet remote control (access via own <a href="https://pagekite.net/"
@@ -1189,7 +1197,7 @@
                 <br />
                 <i>The project was sold to one of the clients in 2019</i>.
 
-
+                </div>
               </div>
 
               <!-- Pictures content -->
@@ -1669,9 +1677,11 @@
     <hr />
 
     <div class="footer">
-      <i>This website, like everything in life, is a work in progress. If you find a mistake in Credits or somewhere
+      <i>This website, like everything in life, is a work in progress 🏞. If you find a mistake in Credits or somewhere
         else,
-        please feel free to contact me 📝📝📝.</i>
+        please feel free to contact me 📝📝📝. Code stats via
+        🎸<a href="https://github.com/oleander/git-fame-rb" target="_blank">git-fame-rb</a>.
+      </i>
     </div>
 
   </div>
