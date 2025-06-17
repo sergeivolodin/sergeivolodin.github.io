@@ -1,0 +1,4 @@
+# http://sergeivolodin.github.io llms.txt
+
+- [Sergei Volodin's Portfolio](https://sergeivolodin.github.io/): Sergei Volodin's portfolio showcasing projects in AI, AR, and robotics.
+- [EPFL Labs Overview](https://sergeivolodin.github.io/epfl-labs): Overview of EPFL labs with tag clouds from research papers.
